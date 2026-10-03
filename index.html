@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inshal Akber | Full Stack Web Developer</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Inshal Akber - Full Stack Web Developer. Explore my skills, projects, experience and web development work.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+<style id="hero-final-fixes">
+/* Keep the original two-column hero: text + photo. */
+.hero-section .row.align-items-center {
+    position: relative;
+}
+
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Stats belong directly under the hero buttons. */
+.hero-section .hero-content .hero-stats {
+    position: relative !important;
+    width: 100%;
+    margin: 24px 0 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+/* Hide only the old hero social links; the profile image stays visible. */
+.hero-section .hero-socials {
+    display: none !important;
+}
+
+/* One role line with the existing typing cursor. */
+.hero-section .typing-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section .hero-content .hero-stats {
+        justify-content: flex-start;
+        margin-top: 20px !important;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         PAGE LOADER
+    ========================================== -->
+
+    <div id="pageLoader">
+        <div class="loader-content">
+
+            <div class="loader-logo">
+                IA<span>.</span>
+            </div>
+
+            <div class="loader-line"></div>
+
+            <p>Loading Portfolio...</p>
+
+        </div>
+    </div>
+
+
+    <!-- =========================================
+         SCROLL PROGRESS BAR
+    ========================================== -->
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home">
+
+                <span class="logo-bracket">&lt;</span>
+                <span>IA</span>
+                <span class="logo-bracket">/&gt;</span>
+
+            </a>
+
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Navbar CV Button -->
+                <a href="assets/cv/mycv.pdf"
+                    class="btn btn-primary-custom cv-btn"
+                    download>
+
+                    <i class="bi bi-download"></i>
+                    Download CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <section id="home" class="hero-section">
+
+        <!-- Background Grid -->
+        <div class="hero-grid"></div>
+
+        <!-- Glow Effects -->
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <!-- Hero Content -->
+                <div class="col-lg-7">
+
+                    <div class="hero-content">
+
+                        <!-- Small Intro -->
+                        <div class="hero-tag">
+
+                            <span class="status-dot"></span>
+
+                            <span>
+                                Available for opportunities
+                            </span>
+
+                        </div>
+
+
+                        <!-- Heading -->
+                        <h1>
+
+                            Hi, I'm
+                            <span class="accent-text">
+                                Inshal Akber
+                            </span>
+
+                            <br>
+
+                            <span class="typing-wrapper">
+                                <span id="typingText">Full Stack Web Developer</span>
+                                <span class="typing-cursor">|</span>
+                            </span>
+
+                        </h1>
+
+
+                        <!-- Description -->
+                        <p class="hero-description">
+
+                            I build modern, responsive and interactive
+                            websites and web applications using clean
+                            code and modern technologies.
+
+                        </p>
+
+
+                        <!-- Hero Buttons -->
+                        <div class="hero-buttons">
+
+                            <a href="#projects"
+                                class="btn btn-primary-custom">
+
+                                <i class="bi bi-code-slash"></i>
+
+                                View My Projects
+
+                            </a>
+
+
+                            <a href="assets/cv/mycv.pdf"
+                                class="btn btn-outline-custom"
+                                download>
+
+                                <i class="bi bi-file-earmark-arrow-down"></i>
+
+                                Download CV
+
+                            </a>
+
+                        </div>
+
+                        <!-- Hero Stats -->
+                        <div class="hero-stats">
+
+                <div class="stat-item">
+
+                    <h3 data-count="10">
+                        0+
+                    </h3>
+
+                    <p>
+                        Technologies
+                    </p>
+
+                </div>
+
+
+                <div class="stat-line"></div>
+
+
+                <div class="stat-item">
+
+                    <h3 data-count="10">
+                        0+
+                    </h3>
+
+                    <p>
+                        Projects
+                    </p>
+
+                </div>
+
+
+                <div class="stat-line"></div>
+
+
+                <div class="stat-item">
+
+                    <h3 data-count="100">
+                        0%
+                    </h3>
+
+                    <p>
+                        Dedication
+                    </p>
+
+                </div>
+
+            </div>
+
+</div>
+
+                </div>
+
+
+
+                <!-- Hero Profile -->
+                <div class="col-lg-5">
+
+                    <div class="profile-wrapper">
+
+                        <!-- Decorative Circle -->
+                        <div class="profile-circle"></div>
+
+                        <!-- Profile Image -->
+                        <div class="profile-image-container">
+
+                            <img src="assets/images/mybgpic.png"
+                                alt="Inshal Akber - Web Developer"
+                                class="profile-image">
+
+                        </div>
+
+
+                        <!-- Floating Code Card -->
+                        <div class="floating-code-card">
+
+                            <div class="code-header">
+
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+                                <span class="code-dot"></span>
+
+                            </div>
+
+                            <div class="code-body">
+
+                                <span class="code-purple">const</span>
+
+                                <span class="code-white">
+                                    developer
+                                </span>
+
+                                <span>=</span>
+
+                                <span class="code-blue">
+                                    {
+                                </span>
+
+                                <br>
+
+                                <span class="code-indent">
+                                    name:
+                                </span>
+
+                                <span class="code-green">
+                                    "Inshal"
+                                </span>
+
+                                <span>,</span>
+
+                                <br>
+
+                                <span class="code-indent">
+                                    role:
+                                </span>
+
+                                <span class="code-green">
+                                    "Developer"
+                                </span>
+
+                                <br>
+
+                                <span class="code-blue">
+                                    };
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT SECTION
+    ========================================== -->
+
+    <section id="about" class="section-padding about-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="section-heading">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        ABOUT ME
+                    </span>
+
+                    <h2>
+                        Turning ideas into
+                        <span class="accent-text">
+                            digital experiences.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="row align-items-center g-5">
+
+                <!-- About Text -->
+                <div class="col-lg-7">
+
+                    <div class="about-content">
+
+                        <p class="about-lead">
+
+                            I'm a passionate Web Developer focused on
+                            building responsive, interactive and
+                            user-friendly websites and web applications.
+
+                        </p>
+
+
+                        <p>
+
+                            I enjoy transforming ideas into functional
+                            digital experiences. My development journey
+                            includes frontend technologies, backend
+                            development, databases and modern web
+                            frameworks.
+
+                        </p>
+
+
+                        <p>
+
+                            I focus on writing clean, organized and
+                            maintainable code while continuously
+                            improving my problem-solving skills.
+
+                        </p>
+
+
+                        <div class="about-highlights">
+
+                            <div class="highlight-item">
+
+                                <div class="highlight-icon">
+
+                                    <i class="bi bi-code-square"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Clean Code
+                                    </h5>
+
+                                    <p>
+                                        Structured & maintainable
+                                        development.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="highlight-item">
+
+                                <div class="highlight-icon">
+
+                                    <i class="bi bi-phone"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Responsive
+                                    </h5>
+
+                                    <p>
+                                        Websites for every screen.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="highlight-item">
+
+                                <div class="highlight-icon">
+
+                                    <i class="bi bi-lightning-charge"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Performance
+                                    </h5>
+
+                                    <p>
+                                        Fast and optimized experiences.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Developer Terminal -->
+                <div class="col-lg-5">
+
+                    <div class="terminal-window">
+
+                        <div class="terminal-header">
+
+                            <div class="terminal-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span>
+                                developer.js
+                            </span>
+
+                        </div>
+
+
+                        <div class="terminal-body">
+
+                            <div>
+                                <span class="terminal-purple">
+                                    const
+                                </span>
+
+                                <span class="terminal-blue">
+                                    developer
+                                </span>
+
+                                =
+                                {
+                            </div>
+
+
+                            <div class="terminal-indent">
+
+                                <span class="terminal-key">
+                                    name:
+                                </span>
+
+                                <span class="terminal-green">
+                                    "Inshal Akber"
+                                </span>,
+
+                            </div>
+
+
+                            <div class="terminal-indent">
+
+                                <span class="terminal-key">
+                                    passion:
+                                </span>
+
+                                <span class="terminal-green">
+                                    "Web Development"
+                                </span>,
+
+                            </div>
+
+
+                            <div class="terminal-indent">
+
+                                <span class="terminal-key">
+                                    focus:
+                                </span>
+
+                                <span class="terminal-green">
+                                    "Full Stack"
+                                </span>,
+
+                            </div>
+
+
+                            <div class="terminal-indent">
+
+                                <span class="terminal-key">
+                                    mindset:
+                                </span>
+
+                                <span class="terminal-green">
+                                    "Keep Learning"
+                                </span>
+
+                            </div>
+
+
+                            <div>
+                                };
+                            </div>
+
+
+                            <br>
+
+
+                            <div>
+
+                                <span class="terminal-purple">
+                                    console
+                                </span>.
+
+                                <span class="terminal-blue">
+                                    log
+                                </span>
+
+                                (
+                                <span class="terminal-green">
+                                    "Let's build!"
+                                </span>
+                                );
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SKILLS SECTION
+    ========================================== -->
+
+    <section id="skills" class="section-padding skills-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        MY SKILLS
+                    </span>
+
+                    <h2>
+                        Technologies I
+                        <span class="accent-text">
+                            work with.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- Frontend -->
+                <div class="col-lg-4">
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-icon">
+
+                            <i class="bi bi-window"></i>
+
+                        </div>
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+                        <p>
+                            Building modern and responsive user
+                            interfaces.
+                        </p>
+
+
+                        <div class="skill-list">
+
+                            <div class="skill-item">
+                                <span>HTML5</span>
+                                <span>90%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:90%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>CSS3</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:85%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:80%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>Bootstrap</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:85%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>jQuery</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:75%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Backend -->
+                <div class="col-lg-4">
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-icon">
+
+                            <i class="bi bi-server"></i>
+
+                        </div>
+
+                        <h3>
+                            Backend
+                        </h3>
+
+                        <p>
+                            Developing server-side applications and
+                            APIs.
+                        </p>
+
+
+                        <div class="skill-list">
+
+                            <div class="skill-item">
+                                <span>PHP</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:85%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>Laravel</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:75%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>MySQL</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:80%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>XML</span>
+                                <span>70%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:70%"></span>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <span>XSL</span>
+                                <span>65%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <span style="width:65%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Tools -->
+                <div class="col-lg-4">
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-icon">
+
+                            <i class="bi bi-tools"></i>
+
+                        </div>
+
+                        <h3>
+                            Tools & Others
+                        </h3>
+
+                        <p>
+                            Tools and technologies I use during
+                            development.
+                        </p>
+
+
+                        <div class="tools-grid">
+
+                            <div class="tool-item">
+                                <i class="bi bi-git"></i>
+                                <span>Git</span>
+                            </div>
+
+
+                            <div class="tool-item">
+                                <i class="bi bi-github"></i>
+                                <span>GitHub</span>
+                            </div>
+
+
+                            <div class="tool-item">
+                                <i class="bi bi-filetype-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+
+
+                            <div class="tool-item">
+                                <i class="bi bi-database"></i>
+                                <span>MySQL</span>
+                            </div>
+
+
+                            <div class="tool-item">
+                                <i class="bi bi-file-earmark-word"></i>
+                                <span>MS Word</span>
+                            </div>
+
+
+                            <div class="tool-item">
+                                <i class="bi bi-code-square"></i>
+                                <span>VS Code</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PROJECTS SECTION
+    ========================================== -->
+
+    <section id="projects" class="section-padding projects-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        MY WORK
+                    </span>
+
+                    <h2>
+                        Featured
+                        <span class="accent-text">
+                            Projects.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+
+                <button class="filter-btn active"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+                <button class="filter-btn"
+                    data-filter="frontend">
+
+                    Frontend
+
+                </button>
+
+                <button class="filter-btn"
+                    data-filter="backend">
+
+                    Backend
+
+                </button>
+
+                <!-- Changed Database to Laravel -->
+                <button class="filter-btn"
+                    data-filter="laravel">
+
+                    Laravel
+
+                </button>
+
+                <button class="filter-btn"
+                    data-filter="fullstack">
+
+                    Full Stack
+
+                </button>
+
+            </div>
+
+
+            <!-- Projects -->
+            <div class="row g-4" id="projectsContainer">
+
+
+                <!-- Project 1: Travora -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="backend laravel fullstack">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/travora.png"
+                                alt="Travora - AI-Powered Travel Platform">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    ✈️
+                                </div>
+
+                                <button type="button"
+                                    class="project-view-btn"
+                                    data-project="project6">
+
+                                    <i class="bi bi-play-circle"></i>
+
+                                    Watch Demo
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Travora — AI-Powered Travel Platform
+                            </h3>
+
+                            <p>
+                                A cinematic 3D travel platform where users explore destinations, get AI-powered trip itineraries, save favorites, and book trips.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Laravel 9</span>
+                                <span>PHP 8</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap 5</span>
+                                <span>Custom CSS/JS</span>
+                                <span>AJAX</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button type="button"
+                                    class="text-btn"
+                                    data-project="project6">
+
+                                    Watch Demo
+                                    <i class="bi bi-play-circle"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Project 2: Fan Hub Plus -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="backend laravel fullstack">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/fanhub_plus.png"
+                                alt="Fan Hub Plus - Fandom Universe">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    🌌
+                                </div>
+
+                                <button type="button"
+                                    class="project-view-btn"
+                                    data-project="project2">
+
+                                    <i class="bi bi-play-circle"></i>
+
+                                    Watch Demo
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Fan Hub Plus - Fandom Universe
+                            </h3>
+
+                            <p>
+                                A responsive, interactive Fandom Universe platform organizing content into 8 categories with an AI chatbot and admin panel.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>Laravel 11</span>
+                                <span>PHP 8.2</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                                <span>Custom CSS/JS</span>
+                                <span>AJAX</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button type="button"
+                                    class="text-btn"
+                                    data-project="project2">
+
+                                    Watch Demo
+                                    <i class="bi bi-play-circle"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Project 3: Noor-E-Mehal -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="backend database fullstack">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/Noor-E-Mehal-pic.png"
+                                alt="Noor-E-Mehal - Wedding Management System">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    💒
+                                </div>
+
+                                <button type="button"
+                                    class="project-view-btn"
+                                    data-project="project1">
+
+                                    <i class="bi bi-play-circle"></i>
+
+                                    Watch Demo
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Noor-E-Mehal
+                            </h3>
+
+                            <p>
+                                Professional wedding organizer management system with dynamic booking.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>Custom CSS/JS</span>
+                                <span>AJAX</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <button type="button"
+                                    class="text-btn"
+                                    data-project="project1">
+
+                                    Watch Demo
+                                    <i class="bi bi-play-circle"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Project 4: IDALY - Plastic Industrial -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="frontend">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/industry_web_pic.png"
+                                alt="IDALY - Plastic Industrial Website">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    🏭
+                                </div>
+
+                                <a href=" https://inshalakbar.github.io/IDALY---Plastic-Industrial/"
+                                    target="_blank"
+                                    class="project-view-btn">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    Views
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                04
+                            </span>
+
+                            <h3>
+                                IDALY - Plastic Industrial
+                            </h3>
+
+                            <p>
+                                Industrial plastic manufacturing company website with modern UI design.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <a href=" https://inshalakbar.github.io/IDALY---Plastic-Industrial/"
+                                    target="_blank">
+
+                                    GitHub
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                                <button class="text-btn"
+                                    data-project="project3">
+
+                                    Details
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Project 5: Calculator -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="frontend">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/calculator.png"
+                                alt="Calculator">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    🧮
+                                </div>
+
+                                <a href="https://inshalakbar.github.io/Calculator/"
+                                    target="_blank"
+                                    class="project-view-btn">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    Views
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                05
+                            </span>
+
+                            <h3>
+                                Interactive Vanilla JavaScript Calculator
+                            </h3>
+
+                            <p>
+                                Modern Glassmorphism and Neumorphic UI design Calculator
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <a href=".https://inshalakbar.github.io/Calculator/"
+                                    target="_blank">
+
+                                    GitHub
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                                <button class="text-btn"
+                                    data-project="project4">
+
+                                    Details
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Project 6: Speedy -->
+                <div class="col-md-6 col-lg-4 project-card-wrapper"
+                    data-category="frontend">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+
+                            <img src="./assets/images/Speedy_web_pic.png"
+                                alt="Speedy - Shoes Store">
+
+                            <div class="project-overlay">
+
+                                <div style="position:absolute;top:15px;left:15px;font-size:40px;z-index:5;">
+                                    👟
+                                </div>
+
+                                <a href=" https://inshalakbar.github.io/Speedy_Website/"
+                                    target="_blank"
+                                    class="project-view-btn">
+
+                                    <i class="bi bi-eye"></i>
+
+                                    Views
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                06
+                            </span>
+
+                            <h3>
+                                Speedy
+                            </h3>
+
+                            <p>
+                                Modern shoes & sneakers retail website with responsive design.
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+
+                            </div>
+
+
+                            <div class="project-links">
+
+                                <a href=" https://inshalakbar.github.io/Speedy_Website/"
+                                    target="_blank">
+
+                                    GitHub
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                                <button class="text-btn"
+                                    data-project="project5">
+
+                                    Details
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SERVICES SECTION
+    ========================================== -->
+
+    <section id="services" class="section-padding services-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        WHAT I DO
+                    </span>
+
+                    <h2>
+                        My
+                        <span class="accent-text">
+                            Services.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-layout-text-window-reverse"></i>
+
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Modern and responsive websites built
+                            with clean and structured code.
+                        </p>
+
+                        <span class="service-number">
+                            01
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-code-square"></i>
+
+                        </div>
+
+                        <h3>
+                            Frontend Development
+                        </h3>
+
+                        <p>
+                            Interactive interfaces using HTML,
+                            CSS, JavaScript and Bootstrap.
+                        </p>
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-database"></i>
+
+                        </div>
+
+                        <h3>
+                            Backend Development
+                        </h3>
+
+                        <p>
+                            PHP, Laravel and MySQL based dynamic
+                            web applications.
+                        </p>
+
+                        <span class="service-number">
+                            03
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTACT SECTION
+    ========================================== -->
+
+    <section id="contact" class="section-padding contact-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div>
+
+                    <span class="section-label">
+                        CONTACT
+                    </span>
+
+                    <h2>
+                        Let's build something
+                        <span class="accent-text">
+                            great.
+                        </span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-5">
+
+
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+
+                    <div class="contact-info">
+
+                        <p class="contact-lead">
+
+                            Have a project in mind or want to
+                            discuss an opportunity?
+
+                            <br><br>
+
+                            Feel free to reach out.
+
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+
+                                <i class="bi bi-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <a href="mailto:inshalchohan752@gmail.com">
+                                    inshalchohan752@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+
+                                <i class="bi bi-github"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    GitHub
+                                </span>
+
+                                <a href="https://github.com/InshalAkbar"
+                                    target="_blank">
+
+                                    github.com/InshalAkbar
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+
+                                <i class="bi bi-linkedin"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    LinkedIn
+                                </span>
+
+                                <a href="https://www.linkedin.com/in/inshal-chohan-179337440/"
+                                    target="_blank">
+
+                                    LinkedIn Profile
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+
+                    <form class="contact-form"
+                        id="contactForm">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Your Email
+                                </label>
+
+                                <input type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="What is this about?"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Write your message..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button type="submit"
+                                    class="btn btn-primary-custom">
+
+                                    <span>
+                                        Send Message
+                                    </span>
+
+                                    <i class="bi bi-send"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <a href="#home"
+                    class="footer-logo">
+
+                    &lt;IA/&gt;
+
+                </a>
+
+
+                <p>
+
+                    Designed & Built by
+                    <span class="accent-text">
+                        Inshal Akber
+                    </span>
+
+                </p>
+
+
+                <div class="footer-socials">
+
+                    <a href="https://github.com/InshalAkbar"
+                        target="_blank"
+                        aria-label="GitHub">
+
+                        <i class="bi bi-github"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/inshal-chohan-179337440/"
+                        target="_blank"
+                        aria-label="LinkedIn">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+                    <a href="mailto:inshalchohan752@gmail.com"
+                        aria-label="Email">
+
+                        <i class="bi bi-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Inshal Akber. All rights reserved.
+                </span>
+
+                <span class="footer-code">
+                    &lt;/&gt; with passion
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         PROJECT MODAL
+    ========================================== -->
+
+    <div class="project-modal"
+        id="projectModal">
+
+        <div class="modal-overlay"
+            id="modalOverlay">
+        </div>
+
+
+        <div class="project-modal-content">
+
+            <button class="modal-close"
+                id="modalClose">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+
+            <div class="modal-image">
+
+                <img id="modalProjectImage"
+                    src=""
+                    alt="Project">
+
+                <video id="modalProjectVideo"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    style="display:none; width:100%; height:100%; object-fit:contain; background:#000;">
+                </video>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <span id="modalProjectNumber"
+                    class="project-number">
+
+                    01
+
+                </span>
+
+                <h2 id="modalProjectTitle">
+                    Project Title
+                </h2>
+
+                <p id="modalProjectDescription">
+                    Project description.
+                </p>
+
+
+                <div id="modalProjectTech"
+                    class="project-tech">
+
+                </div>
+
+
+                <div class="modal-buttons">
+
+                    <a href="#"
+                        id="modalGithub"
+                        target="_blank"
+                        class="btn btn-outline-custom">
+
+                        <i class="bi bi-github"></i>
+
+                        GitHub
+
+                    </a>
+
+
+                    <a href="#"
+                        id="modalLive"
+                        target="_blank"
+                        class="btn btn-primary-custom">
+
+                        <i class="bi bi-box-arrow-up-right"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         BACK TO TOP
+    ========================================== -->
+
+    <button id="backToTop"
+        class="back-to-top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =========================================
+         BOOTSTRAP JS
+    ========================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =========================================
+         MAIN JAVASCRIPT
+    ========================================== -->
+
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
